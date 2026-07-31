@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<title>接水果 · 黃昏果園</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="board" id="board">
+  <canvas id="game"></canvas>
+
+  <div class="hud-corner left">
+    <div class="card">
+      <div class="eyebrow">Score</div>
+      <div class="score" id="score">0</div>
+      <div class="row" style="margin-top:8px">
+        <div class="eyebrow" style="margin:0">Lives</div>
+        <div class="lives" id="lives"><i class="life"></i><i class="life"></i><i class="life"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hud-corner right">
+    <div class="card juice-card">
+      <div class="eyebrow" id="modeLabel">--:--</div>
+      <div class="glass"><div class="liquid" id="liquid"></div></div>
+      <div class="glass-label">JUICE</div>
+    </div>
+  </div>
+
+  <div class="overlay" id="overlay" hidden></div>
+</div>
+
+<script src="js/engine.js"></script>
+<script src="js/hud.js"></script>
+<script src="js/modes/registry.js"></script>
+<script src="js/modes/nomiss.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
